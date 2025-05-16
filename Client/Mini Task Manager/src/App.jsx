@@ -1,6 +1,6 @@
 import React from 'react'
 import TaskList from './Component/TaskList'
-import AddTask from './Component/AddTask'
+// import AddTask from './Component/AddTask'
 
 const App = () => {
   return (

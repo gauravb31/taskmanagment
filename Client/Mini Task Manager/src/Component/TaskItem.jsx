@@ -1,6 +1,6 @@
 import React from "react";
 
-export default TaskItem = ({ task, index, onStatusChange, onDelete }) => {
+const TaskItem = ({ task, index, onStatusChange, onDelete }) => {
   return (
     <li className="task-item">
       <input
@@ -16,3 +16,5 @@ export default TaskItem = ({ task, index, onStatusChange, onDelete }) => {
     </li>
   );
 };
+
+export default TaskItem;
