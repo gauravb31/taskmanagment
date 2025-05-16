@@ -1,0 +1,65 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+select {
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-header,
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.task-header {
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
