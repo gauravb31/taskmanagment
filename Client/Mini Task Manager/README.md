@@ -1,12 +1,66 @@
-# React + Vite
+# React + Vite Todo Task List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple **Task Management App** built with **React** and **Vite**. It allows users to add, complete, filter, and delete tasks with data persistence via `localStorage`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 How to Run the Project
 
-## Expanding the ESLint configuration
+### 1. Clone the Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/gauravb31/taskmanagment.git
+cd taskmanagment
+
+## Install Dependencies
+
+npm install
+
+## Start the Development Server
+npm run dev
+
+## Decisions and Assumptions
+Vite was chosen for fast dev server startup and hot module replacement.
+
+LocalStorage is used for persisting tasks instead of a backend or database.
+
+Each task has a:
+
+Name (text string)
+
+Status (either Active or Completed)
+
+Task names are assumed to be unique for simplicity when deleting them.
+
+Filtering is done on the client-side.
+
+## Features
+✅ Add tasks
+
+✅ Mark tasks as completed or active via checkbox
+
+✅ Filter tasks by status (All, Active, Completed)
+
+✅ Delete tasks
+
+✅ Persist task list using localStorage
+
+✅ Responsive and clean layout (basic CSS)
+
+## Bonus Features Implemented
+Reusable component for task item (TaskItem)
+
+Automatic focus management using controlled inputs
+
+Persistent task state using localStorage
+
+Task count for pending items
+
+## Tech Stack
+React (Functional components + Hooks)
+
+Vite (Fast build and dev server)
+
+CSS for styling
+
+ESLint with recommended rules
